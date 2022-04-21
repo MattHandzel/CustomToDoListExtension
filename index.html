@@ -1,0 +1,31 @@
+<!--I want this to do list to have a:
+        1. Dynamic Progress bar
+        2. Items that you check off
+        3. Items that you can add
+    -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Custom To Do List :D
+    </title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h2>Custom To Do List</h2>
+    <div id="progressBarParent" style="width: 1000; height: 20; background-color: white;">
+        <div id="progressBar" style="width: 5px; height: 20px; background-color: green;"></div>
+    </div>
+    
+    <!--Populate the html file with a list-->
+    <input type="checkbox" name="checkbox" id="item1Checkbox" onclick="checkProgress()">
+    <input type="text" name="itemInput" id = "item1Input" value="First thing to do"></input><br>
+    <input type="checkbox" name="checkbox" id="item2Checkbox" onclick="checkProgress()">
+    <input type="text" name="itemInput" id = "item2Input" value="Second thing to do"></input><br>
+    <input type="checkbox" name="checkbox" id="item3Checkbox" onclick="checkProgress()">
+    <input type="text" name="itemInput" id = "item3Input" value="Third thing to do"></input><br>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
