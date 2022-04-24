@@ -9,22 +9,30 @@
     <title>
         Custom To Do List :D
     </title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <h2>Custom To Do List</h2>
-    <div id="progressBarParent" style="width: 1000; height: 20; background-color: white;">
-        <div id="progressBar" style="width: 5px; height: 20px; background-color: green;"></div>
+    <br>
+    <strong>Progress</strong>:
+    <div id="progressBarParent" style="width: 1000px; height: 20px; background-color: white;">
+        <div id="progressBar" style="width: 0px; height: 20px; background-color: green;"></div>
     </div>
-    
-    <!--Populate the html file with a list-->
-    <input type="checkbox" name="checkbox" id="item1Checkbox" onclick="checkProgress()">
-    <input type="text" name="itemInput" id = "item1Input" value="First thing to do"></input><br>
-    <input type="checkbox" name="checkbox" id="item2Checkbox" onclick="checkProgress()">
-    <input type="text" name="itemInput" id = "item2Input" value="Second thing to do"></input><br>
-    <input type="checkbox" name="checkbox" id="item3Checkbox" onclick="checkProgress()">
-    <input type="text" name="itemInput" id = "item3Input" value="Third thing to do"></input><br>
+    <input type="button" id="addItemButton" value="Add New Item">
 
+
+    <!--Populate the html file with a list-->
+    <div id="toDoList"> <!--List of all the things to do-->
+    </div>
+
+    <input type="file" name="inputfile"
+            id="inputfile">
+    <br>
+   
+    <pre id="output"></pre>
+    
+    <!--Pre tag means keep the preformatted text, this is so that when we 
+    input the file, if is already formatted nicely, we don't have to do crazy stuff-->
     
 <script src="script.js"></script>
 </body>

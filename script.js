@@ -32,10 +32,7 @@ function addItem(){
     document.getElementById("toDoList").appendChild(new_br);
 }
 
-
-
-// Gets all elements
-document.getElementsByTagName("*").addEventListener("change", save);
+document.getElementById("addItemButton").addEventListener("click", checkProgress);
 
 checkProgress();
 document.getElementById("addItemButton").addEventListener("click", addItem);
@@ -44,6 +41,24 @@ document.getElementById("progressBarParent").style.width = window.innerWidth + "
 
 window.addEventListener("resize", checkProgress);
 
+// I am going to allow the user to load in a to do list data file (in the form of a cookie)
 
-/// TODO:: Figure out why the event listener isn't working
-//document.getElementsByName("checkbox").forEach(element => element.addEventListener("click", function(){pb.checkProgress()}));
+document.getElementById('inputfile')
+            .addEventListener('change', function() {
+            
+            //File reader
+            var fr=new FileReader();
+
+            // When the file is read, it will reatern that function
+            fr.onload=function(){
+                document.getElementById('output')
+                        .textContent=fr.result;
+                console.log("SET UP");
+            }
+            
+            
+            fr.readAsText(this.files[0]);
+            
+        });
+
+document.getElementById("output").addEventListener("change", function () {console.log("CHANGED");});

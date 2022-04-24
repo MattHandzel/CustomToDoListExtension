@@ -1,0 +1,11 @@
+{
+    "name": "Custom To Do List",
+    "version": "1.0.0",
+    "description": "This is a mini project to help me learn javascript/html as well as chrome extension stuff",
+    "manifest_version": 3,
+    "author": "Matt Handzel",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Custom To Do List"
+    }
+}
