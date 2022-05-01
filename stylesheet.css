@@ -1,5 +1,49 @@
-.progressBar{
+.progressBar {
     width: 1000;
     height: 100;
-    color: black;
-}
+    background-color: black;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Corben', Georgia, Times, serif;
+    }
+    
+    p,
+    div {
+        font-family: 'Nobile', Arial, Helvetica, sans-serif;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .itemInput {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    
+    .parentDiv {
+        background-color: #28292b;
+        width: max-content;
+        border-color: black;
+        border-radius: 5px;
+        border-style: solid;
+        color: white;
+        font-family: Impact, 'Haettenschweiler', 'Arial', sans-serif;
+        letter-spacing: 4px;
+    }
+    
+    .body {
+        background-color: aliceblue;
+    }
+    
+    .resetButton,
+    .addNewItemButton {
+        background-color: #28292b;
+        border-color: #28292b;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    

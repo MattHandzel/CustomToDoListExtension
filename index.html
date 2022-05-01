@@ -5,34 +5,39 @@
     -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>
-        Custom To Do List :D
+        Custom To Do List
     </title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
-    <h2>Custom To Do List</h2>
+<body class="body" , style="background-color: #1b1c1c; color:white; margin: 10px;">
     <br>
-    <strong>Progress</strong>:
-    <div id="progressBarParent" style="width: 1000px; height: 20px; background-color: white;">
-        <div id="progressBar" style="width: 0px; height: 20px; background-color: green;"></div>
+    <div style="margin-left: 2px; font-size: 24px;"><strong>Progress:</strong></div>
+    <div id="progressBarParent" style="width: 350px; height: 45px; background-color: white;">
+        <div id="progressBar" style="width: 0px; height: 45px; background-color: green; color: black; font-size: 32px;">
+        </div>
     </div>
-    <input type="button" id="addNewItemButton" value="Add New Item">
-    
+    <input type="button" class="addNewItemButton" id="addNewItemButton" value="Add New Item">
+    <input type="button" value="Reset" id="resetButton" , class="resetButton">
     <div id="timesClickedButton">
     </div>
 
-    <input type="button" value="Delete All Data" id="deleteAllDataButton">
 
     <!--Populate the html file with a list-->
-    <div id="toDoList"> <!--List of all the things to do-->
+    <div id="toDoList">
+        <!--List of all the things to do-->
     </div>
 
-    
+
     <!--Pre tag means keep the preformatted text, this is so that when we 
     input the file, if is already formatted nicely, we don't have to do crazy stuff-->
-    
 <script src="script.js"></script>
 </body>
+
 </html>
