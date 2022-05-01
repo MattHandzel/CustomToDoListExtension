@@ -68,7 +68,7 @@ function addItem(itemText = "Thing To Do", completionStatus = false) {
     check.id = thisItemNumber + "_checkButton"
     check.className = "material-icons"
     check.innerHTML = "check"
-    check.style = completionStatus === "true" ? "color: green;" : "color: black;";
+    check.style = completionStatus === "true" ? "color: " + completedTaskColor + ";" : "color: black;";
 
     // Initialize the input bar
     new_item.type = "text";
