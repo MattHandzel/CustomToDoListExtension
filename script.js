@@ -41,24 +41,3 @@ document.getElementById("progressBarParent").style.width = window.innerWidth + "
 
 window.addEventListener("resize", checkProgress);
 
-// I am going to allow the user to load in a to do list data file (in the form of a cookie)
-
-document.getElementById('inputfile')
-            .addEventListener('change', function() {
-            
-            //File reader
-            var fr=new FileReader();
-
-            // When the file is read, it will reatern that function
-            fr.onload=function(){
-                document.getElementById('output')
-                        .textContent=fr.result;
-                console.log("SET UP");
-            }
-            
-            
-            fr.readAsText(this.files[0]);
-            
-        });
-
-document.getElementById("output").addEventListener("change", function () {console.log("CHANGED");});
