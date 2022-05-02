@@ -8,3 +8,5 @@ Example screenshot:
 ![image](https://user-images.githubusercontent.com/39449480/166170153-df677e88-4f82-4d42-b09f-f77e81c6641e.png)
 
 I might put this onto the chrome webstore just for funsies but imma have to do some more research before that
+
+If you wanna use this extension (for whatever reason), clone this repository, then go to to your extensions manager (chrome://extensions), enable developer mode, and then click on load unpacked and select on the folder that contains this extension
